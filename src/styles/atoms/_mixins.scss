@@ -1,0 +1,13 @@
+
+@mixin text-style($family:$font-family-base,$weight,$style:normal,$size,$color,$height:100%,$space:0px){
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  color: $color;
+  line-height: $height;
+  letter-spacing: $space;
+
+}
+
+

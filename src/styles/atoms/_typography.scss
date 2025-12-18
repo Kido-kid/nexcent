@@ -1,0 +1,24 @@
+@use "styles/atoms/_mixins.scss";
+@import "styles/atoms/_variables.scss";
+
+
+html,body{
+    font-family: $font-family-base;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $color-heading-primary;
+}
+
+h2{
+    @include mixins.text-style($font-family-base,$font-weight-h2,$font-style-h2,$font-size-h2,$color-heading-primary,$line-height-h2);
+}
+
+%regular{
+    @include mixins.text-style($font-family-base,$font-weight-regular,$font-style-regular,$font-size-regular,$color-heading-regular-gray,$line-height-regular);
+}
+
+// text-style($family:$font-family-base,$weight,$style:normal,$size,$color,$height:100%,$space:0px)
+
+
+
