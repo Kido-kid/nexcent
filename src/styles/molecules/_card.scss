@@ -1,29 +1,24 @@
+@import "styles/atoms/_variables.scss";
 
-
-&__cards{
-        @extend %display-flex;
-        padding: 2rem;
-        gap: 2rem;    
+%cards-value_preposition-comp{
+        @extend %display-flex; 
+        padding: $padding-cards-primary;
+        gap: $gap-cards-primary;    
     }
-    &__card{
-        width: 299px;
-        height: 260px;
-        padding: 24px 32px;
-        radius:8px;
+%card-value_preposition-comp{
+        width: $card-width; 
+        height: $card-height;
+        padding: $card-padding-top $card-padding-bottom;
+        radius:$card-radius;
         background-color: $color-card-bg;
         text-align: center;
         box-shadow: 0px 2px 4px 0px $color-card-shadow;
         transition: transform 0.3s ease, box-shadow 0.3s ease; 
-        &:hover { 
-            transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        &-text{
-            @extend %regular-small;
-        }
 
         img{
-            max-width: 65px;
-            max-height: 56px;
+            @extend %image-value_proposition--card;
         }
     }
+%card-value_preposition-comp--hover{
+    transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}

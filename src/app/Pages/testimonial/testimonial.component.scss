@@ -1,18 +1,17 @@
 @use "styles/atoms/_typography.scss";
 @use "styles/atoms/_variables.scss" as var;
+@import "styles/organisms/_section.scss";
 .testimonial{
     background-color:var.$color-bg-secondary ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @extend %display-flex--center;
     gap: 1rem;
+    padding: 1rem 1rem;
 
     img{
         max-width: 326px;
         max-height: 326px;
         border-radius: 8px;
     }
-
 
     &__content{
         max-width: 748px;

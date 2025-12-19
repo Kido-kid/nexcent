@@ -1,11 +1,20 @@
-.demo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@import "styles/atoms/_image.scss";
+@import "styles/atoms/_buttons.scss";
+@import "styles/atoms/_section.scss";
 
-    &__title{
-        
+.demo{
+    @extend %display-flex--center;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    &__button{
+        @extend %button--large;
+
+        &:hover{
+            @extend %button-hover;
+        }
+    }
+    img{
+        @extend %image-demo-arrow;
     }
 }

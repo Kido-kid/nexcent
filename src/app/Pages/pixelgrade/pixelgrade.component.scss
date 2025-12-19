@@ -1,30 +1,35 @@
 @use "styles/atoms/_typography.scss";
-.pixelgrade{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 4rem 2rem;
+@import "styles/organisms/_section.scss";
+@import "styles/atoms/_image.scss";
+@import "styles/atoms/_buttons.scss";
 
-    &__image{
-        flex: 0 0 auto;
-        max-width: 350px;    
+
+.pixelgrade{
+
+    @extend %display-flex--center;
+
+    &__image{   
         img{
-            max-width: 441.53px;
-            max-height: 328.99px;
+        @extend %image-pixelgrade_comp;
         }
     }
 
     &__content{
-        flex:0 0 661px;
-        // text-align: center;
+         max-width: 661px;
+        max-height: 308px;
     }
     &__title{
 
     }
     &__description{
         @extend %regular-small;     
+    }
+
+    &__button{
+        @extend %button--medium;
+        &:hover{
+            @extend %button-hover;
+        }
     }
 }
 

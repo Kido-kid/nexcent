@@ -14,4 +14,20 @@
     transform: scale(1.2);       
     filter: brightness(1.2); 
 }
-    
+
+%image-value_proposition--card{
+    @include image-style($image-width-value_proposition--card,$image-height-value_proposition--card);   
+}
+
+%image-article_preview{
+    @include image-style($image-width-article_preview,$image-height-article_preview);
+}
+
+%image-pixelgrade_comp{
+    @include image-style($image-pixelgrade_comp-width,$image-pixelgrade_comp-height);
+}
+
+%image-demo-arrow{
+    @include image-style($image-size-demo-arrow,$image-size-demo-arrow);
+}
+
