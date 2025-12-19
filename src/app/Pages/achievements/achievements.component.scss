@@ -1,0 +1,51 @@
+@use "styles/atoms/_typography.scss";
+@import "styles/atoms/_variables.scss";
+.achievement{
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: $color-bg-secondary;
+    gap: 1rem;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title-part{
+        display: block;
+
+        &--green{
+            color:$color-logo;
+        }
+    }
+
+    &__subtitle{
+        @extend %regular;
+    }
+
+    &__counts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+   
+}
+
+.achievement__count{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+
+        &__unit{
+            @extend %regular;
+        }
+        img{
+            max-width: 48px;
+            max-height: 48px;
+        }
+}

@@ -2,24 +2,44 @@
 //typography
 $font-family-base: 'Inter', sans-serif;
 
-$font-weight-h2: 600;
+
 $font-weight-regular: 400;
+$font-weight-medium:500;
+$font-weight-h2: 600;
+$font-weight-h3:700;
+
 
 $font-style-h2: Semi Bold;
+$font-style-h3: Bold;
 $font-style-regular: Regular;
+$font-style-medium: Medium;
 
+$font-size-h1: 64px;
 $font-size-h2: 36px;
+$font-size-h3: 28px;
+$font-size-h4: 20px;
 $font-size-regular:16px;
+$font-size-regular-small:14px;
 
+$line-height-h1:76px;
 $line-height-h2: 44px;
+$line-height-h3: 36px;
+$line-height-h4: 28px;
 $line-height-regular:24px;
-
-
-
+$line-height-regular-small:20px;
 
 //colors
+$color-logo:rgba(76, 175, 79, 1);
+
+$color-heading-h1:rgba(38, 50, 56, 1);
 $color-heading-primary:rgba(77, 77, 77, 1);
 $color-heading-regular-gray:rgba(113, 113, 113, 1);
+
+$color-card-bg:rgba(255, 255, 255, 1);
+$color-bg-secondary:rgba(245, 247, 250, 1);
+
+$color-card-shadow:rgba(171, 190, 209, 0.2);
+
 
 
 

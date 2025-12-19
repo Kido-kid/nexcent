@@ -1,0 +1,25 @@
+@use "styles/atoms/_typography.scss";
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &__image{
+
+        img{
+            max-width: 441.53px;
+            max-height: 328.99px;
+        }
+    }
+
+    &__content{
+        max-width: 661px;
+        max-height: 308px;
+       
+    }
+    &__summary{
+        @extend %regular;
+    }
+
+}

@@ -1,0 +1,45 @@
+@use "styles/atoms/_typography.scss";
+@import "styles/atoms/_variables.scss";
+.value-proposition{
+    padding: 4rem 2rem;
+    text-align: center;
+
+    &__title{
+        //h2
+    }
+    &__subtitle{
+        @extend %regular;
+    }
+
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 2rem;
+        gap: 2rem;    
+    }
+    &__card{
+        width: 299px;
+        height: 260px;
+        padding: 24px 32px;
+        radius:8px;
+        background-color: $color-card-bg;
+        text-align: center;
+        box-shadow: 0px 2px 4px 0px $color-card-shadow;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        &:hover { 
+            transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        &-text{
+            @extend %regular-small;
+        }
+
+        img{
+            max-width: 65px;
+            max-height: 56px;
+        }
+    }
+
+}
+

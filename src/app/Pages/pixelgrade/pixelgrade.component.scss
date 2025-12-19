@@ -1,0 +1,30 @@
+@use "styles/atoms/_typography.scss";
+.pixelgrade{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+
+    &__image{
+        flex: 0 0 auto;
+        max-width: 350px;    
+        img{
+            max-width: 441.53px;
+            max-height: 328.99px;
+        }
+    }
+
+    &__content{
+        flex:0 0 661px;
+        // text-align: center;
+    }
+    &__title{
+
+    }
+    &__description{
+        @extend %regular-small;     
+    }
+}
+

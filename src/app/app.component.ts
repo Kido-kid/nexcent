@@ -2,10 +2,16 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeroSectionComponent } from './Pages/hero-section/hero-section.component';
 import { ClientSectionComponent } from './Pages/client-section/client-section.component';
+import { ValuePropositionComponent } from './Pages/value-proposition/value-proposition.component';
+import { PixelgradeComponent } from './Pages/pixelgrade/pixelgrade.component';
+import { AchievementsComponent } from './Pages/achievements/achievements.component';
+import { ArticlePreviewComponent } from './Pages/article-preview/article-preview.component';
+import { TestimonialComponent } from './Pages/testimonial/testimonial.component';
+import { DemoNavigationComponent } from './Pages/demo-navigation/demo-navigation.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ClientSectionComponent],
+  imports: [RouterOutlet,ClientSectionComponent,ValuePropositionComponent,PixelgradeComponent,AchievementsComponent,ArticlePreviewComponent,TestimonialComponent,DemoNavigationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
