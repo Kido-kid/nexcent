@@ -1,0 +1,35 @@
+
+@import "styles/atoms/_variables.scss";
+@import "styles/atoms/_typography.scss";
+
+%button--small{
+    max-width: $button-width-small ;
+    max-height: $button-height-primary ;
+    border-radius: $button-radius-primary ;
+    padding:$button-padding-primary ;
+    background-color:$color-logo;
+
+    border: none;
+
+    margin-top: 2rem;
+    @extend %font-button;
+
+    transition: all 0.3s ease-in-out;
+}
+
+%button--medium{
+    @extend %button--small;
+    max-width: $button-width-medium;
+}
+
+%button--large{
+    @extend %button--small;
+    max-width: $button-width-large;
+}
+
+%button-hover { 
+    background-color: darken($color-logo, 10%); 
+    transform: translateY(-2px); 
+}
+
+

@@ -10,4 +10,9 @@
 
 }
 
+@mixin image-style($width,$height,$radius:none){
+  max-width: $width;
+  max-height: $height;
+  border-radius: $radius;
+}
 

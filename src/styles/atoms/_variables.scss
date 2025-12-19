@@ -2,12 +2,10 @@
 //typography
 $font-family-base: 'Inter', sans-serif;
 
-
 $font-weight-regular: 400;
 $font-weight-medium:500;
 $font-weight-h2: 600;
 $font-weight-h3:700;
-
 
 $font-style-h2: Semi Bold;
 $font-style-h3: Bold;
@@ -35,10 +33,27 @@ $color-heading-h1:rgba(38, 50, 56, 1);
 $color-heading-primary:rgba(77, 77, 77, 1);
 $color-heading-regular-gray:rgba(113, 113, 113, 1);
 
-$color-card-bg:rgba(255, 255, 255, 1);
+$color-card-bg:rgba(255, 255, 255, 1); 
 $color-bg-secondary:rgba(245, 247, 250, 1);
 
 $color-card-shadow:rgba(171, 190, 209, 0.2);
+
+//buttons
+$button-width-small:128px;
+$button-width-medium:151px;
+$button-width-large:178px;
+
+$button-height-primary:52px;
+
+$button-radius-primary:4px;
+
+$button-padding-primary:14px 32px;
+
+//images
+$image-width-hero:391px;
+$image-height-hero:407px;
+
+$image-size-client_compo:48px;
 
 
 

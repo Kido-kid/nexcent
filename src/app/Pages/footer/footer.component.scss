@@ -1,0 +1,45 @@
+@use "styles/atoms/_typography.scss";
+@import "styles/atoms/_variables.scss";
+
+.footer{
+    background-color: $color-heading-h1;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__brand,
+    &__section,
+    &__newsletter{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__section-title{
+        color: $color-card-bg;
+    }
+
+    &__text,
+    li{
+        @extend %regular;
+        color: $color-bg-secondary;
+
+        img{
+            max-width:32px;
+            max-height:32px;
+        }
+    }
+
+    &__newsletter__img{
+        max-width: 18px;
+        max-height: 18px;
+    }
+
+    &__social{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+
+}

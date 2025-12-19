@@ -1,15 +1,6 @@
-@use "styles/atoms/_typography.scss";
-@import "styles/atoms/_variables.scss";
-@import "styles/main.scss";
-.value-proposition{
-    padding: 4rem 2rem;
-    text-align: center;
 
-    &__subtitle{
-        @extend %regular;
-    }
 
-    &__cards{
+&__cards{
         @extend %display-flex;
         padding: 2rem;
         gap: 2rem;    
@@ -36,6 +27,3 @@
             max-height: 56px;
         }
     }
-
-}
-

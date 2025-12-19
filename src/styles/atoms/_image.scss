@@ -1,0 +1,17 @@
+@import "styles/atoms/_mixins.scss";
+@import "styles/atoms/_variables.scss";
+
+%image-hero{
+    @include image-style($width:$image-width-hero,$height:$image-height-hero);
+}
+
+%image-client_compo{
+    @include image-style($image-size-client_compo,$image-size-client_compo);
+    transition:transform 0.3s ease, filter 0.3s ease; 
+}
+
+%image-client_compo--hover{
+    transform: scale(1.2);       
+    filter: brightness(1.2); 
+}
+    

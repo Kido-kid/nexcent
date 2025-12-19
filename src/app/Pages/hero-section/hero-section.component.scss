@@ -1,0 +1,40 @@
+@use "styles/atoms/_typography.scss";
+@use "styles/organisms/_section.scss";
+@import "styles/atoms/_variables.scss";
+@import "styles/main.scss";
+
+.hero{
+    background-color: $color-bg-secondary;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    @extend %display-flex;
+
+    &__title-part{
+        padding-bottom: 5px;
+        &--black{
+        color: $color-heading-primary;
+        display: block;
+        }
+        &--green{
+            color: $color-logo;
+        }
+    }
+    &__subtitle{
+        @extend %regular;
+        padding-bottom: 5px;
+    }
+
+    button{
+        @extend %button--small;
+        &:hover{
+            @extend %button-hover;
+        }
+    }
+
+    &__image-box{
+
+        img{
+            @extend %image-hero;
+        }
+    }
+}
